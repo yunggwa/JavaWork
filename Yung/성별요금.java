@@ -12,7 +12,7 @@ public class 성별요금 {
         System.out.print("나이를 입력해주세요");
         int age = sc.nextInt();
 
-        if(gen.equals("남") || gen.equals("여") && age > 0){
+        if(gen.equals("남") && age > 0 || gen.equals("여") && age > 0){
             if(age < 18){
                 System.out.println(gen + "무료입니다");
             } else if (age >= 18 && age < 60) {
@@ -21,7 +21,7 @@ public class 성별요금 {
                 System.out.println(gen +"5,000원");
             }
         }else {
-                System.out.println("잘못");
+                System.out.println("잘못된 입력입니당");
             }
 
     }
