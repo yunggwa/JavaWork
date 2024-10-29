@@ -1,4 +1,4 @@
-package Day9;
+package Day09;
 
 class A{
     int a; //멤버변수
@@ -9,7 +9,7 @@ class A{
     //생성자
     A(){
         a = 10;
-    }
+    } //디폴트처럼 보이지만 아니다
 }
 
 public class classTest1 {
