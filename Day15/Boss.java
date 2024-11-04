@@ -15,7 +15,7 @@ abstract class Unit{
     abstract  void  print();
 
 }
-class Jugg extends Unit{
+class Jugg extends Yung.Unit {
     Jugg(){
         name = "저글링";
         price = 50;
@@ -34,7 +34,7 @@ class Jugg extends Unit{
                 + super.type);
     }
 }
-class Hydra extends Unit{
+class Hydra extends Yung.Unit {
     Hydra(){
         name = "저글링";
         price = 100;
@@ -53,7 +53,7 @@ class Hydra extends Unit{
         + super.type);
     }
 }
-class Marin extends Unit{
+class Marin extends Yung.Unit {
     Marin(){
         name = "마린";
         price = 50;
@@ -74,9 +74,9 @@ class Marin extends Unit{
 }
 public class Boss {
     public static void main(String[] args) {
-        Unit jugg = new Jugg();
-        Unit marin = new Marin();
-        Unit hyra = new Hydra();
+        Yung.Unit jugg = new Jugg();
+        Yung.Unit marin = new Marin();
+        Yung.Unit hyra = new Yung.Hydra();
         jugg.print();
         marin.print();
         hyra.print();
